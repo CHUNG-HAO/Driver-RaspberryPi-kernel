@@ -8,3 +8,9 @@ kernel header
 ```
 sudo apt-get install -y raspberrypi-kernel-headers
 ```
+wpa_cli指令熱身:
+> 它可以用來設定連線或者掃描附近的熱點，可以在樹莓派Official OS image中測試它，以下指令可以掃描附近的熱點資訊，包含SSID與信號強度等等
+
+```
+wpa_cli -iwlan0 scan_results
+```
