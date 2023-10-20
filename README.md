@@ -4,7 +4,7 @@
 <img width="645" alt="image" src="https://github.com/chris911024/Embedded-Linux/assets/67829896/87a9424e-5bd5-4f12-b31b-44c20de5438d">
 
 ### run
-kernel header
+kernel header:
 ```
 sudo apt-get install -y raspberrypi-kernel-headers
 ```
@@ -13,4 +13,9 @@ wpa_cli指令熱身:
 
 ```
 wpa_cli -iwlan0 scan_results
+```
+download:
+```
+$ sudo insmod mydev.ko
+$ dmesg
 ```
