@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/zhonghonghao/Embedded-Linux",
-      "program": "/Users/zhonghonghao/Embedded-Linux/build/Debug/outDebug"
+      "cwd": "/Users/zhonghonghao/Embedded-Linux-kernel",
+      "program": "/Users/zhonghonghao/Embedded-Linux-kernel/build/Debug/outDebug"
     }
   ]
 }
