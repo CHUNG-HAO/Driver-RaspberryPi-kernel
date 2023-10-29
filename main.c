@@ -32,3 +32,34 @@ static ssize_t attr_show(struct device *dev, struct device_attribute *attr, char
         printk("%d\n", val);
         return val;
 }
+
+static struct class *mydev_class;
+static struct device *dev;
+
+static DEVICE_ATTR(data, 0644, attr_show, attr_store);
+
+static int __init init_mydev(void)
+{
+	int ret = 0;
+	printk("Init my dev\n");
+	mydev_class = class_create(THIS_MODULE, "mydev_class");
+	if(IS_ERR(mydev_class)) {
+		ret = PTR_ERR(mydev_class);
+		printk(KERN_ALERT "Failed to create class.\n");
+		return ret;
+	}
+
+	dev = device_create(mydev_class, NULL, MKDEV(100,0), NULL, "dev");
+	if(IS_ERR(dev)) {
+		ret = PTR_ERR(dev);
+		printk(KERN_ALERT "Failed to create device.\n");
+		return ret;
+	}
+
+	ret = device_create_file(dev, &dev_attr_data);
+	if(ret < 0) {
+		printk(KERN_ALERT "Failed to create attribute file.\n");
+		return ret;
+	}
+	return ret;
+}
