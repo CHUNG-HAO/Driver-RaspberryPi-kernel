@@ -2,6 +2,8 @@
 #include <linux/device.h>
 #include <linux/err.h>
 
+
+
 // 將使用者從 user_space 傳遞給內核的數值字串轉換為整數，並將其儲存在全域變數中，同時在kernel module中列印該數值。
 /*
 1. attr_store  =  使用者空間的字串轉換為整數值，並將該值儲存在全域變數  value
@@ -63,3 +65,16 @@ static int __init init_mydev(void)
 	}
 	return ret;
 }
+
+static void __exit cleanup_mydev(void)
+{
+	printk("Cleanup my dev\n");
+	device_remove_file(dev, &dev_attr_data);
+	device_destroy(mydev_class, MKDEV(100, 0));
+	class_destroy(mydev_class);
+}
+
+module_init(init_mydev);
+module_exit(cleanup_mydev);
+
+MODULE_LICENSE("GPL");
