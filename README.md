@@ -1,5 +1,5 @@
 # Driver-RaspberryPi-kernel
-> driver First Experience
+> driver First Experience.
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/chris911024/Embedded-Linux-kernel?style=flat&label=Stars)](https://github.com/chris911024/Embedded-Linux-kernel/stargazers)
