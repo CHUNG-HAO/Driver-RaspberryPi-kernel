@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/zhonghonghao/Embedded-Linux-kernel",
-      "program": "/Users/zhonghonghao/Embedded-Linux-kernel/build/Debug/outDebug"
+      "cwd": "/Users/zhonghonghao/Driver-RaspberryPi-kernel",
+      "program": "/Users/zhonghonghao/Driver-RaspberryPi-kernel/build/Debug/outDebug"
     }
   ]
 }

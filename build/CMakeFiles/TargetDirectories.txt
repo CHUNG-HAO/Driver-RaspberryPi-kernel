@@ -1,0 +1,3 @@
+/Users/zhonghonghao/Driver-RaspberryPi-kernel/build/CMakeFiles/mydev.dir
+/Users/zhonghonghao/Driver-RaspberryPi-kernel/build/CMakeFiles/edit_cache.dir
+/Users/zhonghonghao/Driver-RaspberryPi-kernel/build/CMakeFiles/rebuild_cache.dir
