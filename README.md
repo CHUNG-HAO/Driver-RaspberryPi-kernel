@@ -24,4 +24,4 @@ $ sudo insmod mydev.ko
 $ dmesg
 ```
 
-尚有bug
+尚有bug, 處理中
