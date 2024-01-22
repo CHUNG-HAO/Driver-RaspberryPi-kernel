@@ -7,7 +7,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/chris911024/Embedded-Linux-kernel?style=flat&label=Issues)](https://github.com/chris911024/Embedded-Linux-kernel/issues)
 ## Architecture
 > 32 bits
-### run
+### how to run 
 kernel header:
 ```
 sudo apt-get install -y raspberrypi-kernel-headers
