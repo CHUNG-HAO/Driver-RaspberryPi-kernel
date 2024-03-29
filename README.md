@@ -8,7 +8,7 @@
 ## Architecture
 > 32 bits
 ### how to run 
-kernel header:
+kernel header
 ```
 sudo apt-get install -y raspberrypi-kernel-headers
 ```
@@ -18,7 +18,7 @@ wpa_cli指令熱身:
 ```
 wpa_cli -iwlan0 scan_results
 ```
-download:
+download
 ```
 $ sudo insmod mydev.ko
 $ dmesg
