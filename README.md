@@ -6,7 +6,7 @@
 [![GitHub Forks](https://img.shields.io/github/forks/chris911024/Embedded-Linux-kernel?style=flat&label=Forks)](https://github.com/chris911024/Embedded-Linux-kernel/network/members)
 [![GitHub Issues](https://img.shields.io/github/issues/chris911024/Embedded-Linux-kernel?style=flat&label=Issues)](https://github.com/chris911024/Embedded-Linux-kernel/issues)
 ## Architecture
-> 32 bits
+> 32 bits arm
 ### how to run 
 kernel header
 ```
